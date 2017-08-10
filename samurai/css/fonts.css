@@ -1,0 +1,14 @@
+@font-face {font-family: "HanZiW10";
+    src: url("//db.onlinewebfonts.com/t/0664c0ae80df4af7e9adf0b662ca7ceb.eot");
+    src: url("//db.onlinewebfonts.com/t/0664c0ae80df4af7e9adf0b662ca7ceb.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/0664c0ae80df4af7e9adf0b662ca7ceb.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/0664c0ae80df4af7e9adf0b662ca7ceb.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/0664c0ae80df4af7e9adf0b662ca7ceb.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/0664c0ae80df4af7e9adf0b662ca7ceb.svg#HanZiW10") format("svg");
+}
+
+@import url(//db.onlinewebfonts.com/c/0664c0ae80df4af7e9adf0b662ca7ceb?family=HanZiW10);
+
+@font-face {font-family: "HanZiW10";
+    src: url("../fonts/Han_Zi.ttf") format("truetype");
+}
