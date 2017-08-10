@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: url('../img/bg.jpg') 100%;
   background-attachment: fixed;
@@ -120,8 +124,8 @@ nav {
 nav div {
     line-height: 2;
     font-size: 1.5rem;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: .5s;
+    transition: .5s;
     text-align: center;
     padding: 10px;
     cursor: pointer;
