@@ -11,11 +11,11 @@ body {
 .chess-board__table {
     width: 800px;
     height: 800px;
-    margin: 0 auto;
+    margin: 80px auto;
     border-collapse: collapse;
     border: 1px solid #3E2723;
     padding: 0;
-    transform: rotateX(57deg)skewY(9deg) skewX(-26deg);
+    transform: rotateX(35deg)skewY(9deg) skewX(-26deg);
     box-shadow: 10px 20px 60px black;
     background: #FFFF8D url(https://img1.goodfon.ru/original/1920x1200/2/84/tekstura-fon-derevo-korichnevyy.jpg);
     box-sizing: border-box;
@@ -78,7 +78,6 @@ body {
     border: 1px solid #3E2723;
     padding: 0;
     margin: auto;
-    
 }
 
 .chess:hover {
