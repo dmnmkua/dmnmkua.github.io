@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*wrapper*/
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 109px 51px 100px 63px;
+    background: url(../img/Group%203%20copy.png), url(../img/Layer%205.png), url(../img/Layer%206.png), rgba(225, 225, 225, .54);
+    background-size: cover;
+}
+
+
+
+/*card*/
+
+.card {
+    padding: 24px 21px;
+    background: #111a28;
+    border-radius: 10px;
+    box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.82);
+}
+
+.card__logo {
+    
+}
+
+.card__product {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0 15px;
+}
+
+.card__product-img {
+    margin-right: 70px;
+}
+
+.card__product-price {
+    
+}

@@ -370,6 +370,7 @@ body {
     border-bottom-right-radius: 60px;
     cursor: pointer;
     text-transform: uppercase;
+    height: 100%;
 }
 
 .subscribe__submit input[type="submit"]::after {
