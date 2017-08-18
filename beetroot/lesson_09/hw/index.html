@@ -22,15 +22,55 @@
                 
                 <div class="card__product-img">
                     <img src="img/Nike-SB-Stefan-Janoski-Max.png" alt="Nike SB Stefan Janoski Max" class="card__img">
+                    <div class="card__select-color">
+                        <div class="card__color card__color--black card__color--active"></div>
+                        <div class="card__color card__color--white"></div>
+                        <div class="card__color card__color--red"></div>
+                        <div class="card__color card__color--turquoise"></div>
+                    </div>
                 </div>
                 
+<!--                card product price-->
                 <div class="card__product-price">
                     
                     <h2 class="card__title">Nike SB Stefan Janoski Max</h2>
-                    <p class="card__text">Unisex Skateboarding Shoe (Men's Sizing)</p>
-                    <div class="card__rating"></div>
                     
-                </div>
+                    <p class="card__text">Unisex Skateboarding Shoe</p>
+                    
+                    <div class="card__rating">
+                        <i class="material-icons card__rating-icon card__rating-icon--yellow">star</i>
+                        <i class="material-icons card__rating-icon card__rating-icon--yellow">star</i>
+                        <i class="material-icons card__rating-icon card__rating-icon--yellow">star</i>
+                        <i class="material-icons card__rating-icon">star</i>
+                        <i class="material-icons card__rating-icon">star</i>
+                    </div>
+                    
+<!--                    card form select-->
+                    <form action="" class="card__order">
+                        
+                        <div class="card__select">
+                           
+                            <select name="size" id="" class="card__size">
+                                <option value="size" name="size" disabled selected>Size</option>
+                                <option value="38" name="size">38</option>
+                                <option value="39" name="size">39</option>
+                                <option value="40" name="size">40</option>
+                            </select>
+                            
+                            <select name="quantity" id="" class="card__quantity">
+                                <option value="Qty" name="size" disabled selected>Qty</option>
+                                <option value="1" name="quantity">1</option>
+                                <option value="2" name="quantity">2</option>
+                                <option value="3" name="quantity">3</option>
+                            </select>
+                            
+                            <button class="card__button">Add to card</button>
+                            
+                        </div>
+                        
+                    </form> <!--                    ./card form select-->
+                    
+                </div> <!--                ./card product price-->
                 
             </div> <!--            ./card product-->
             
