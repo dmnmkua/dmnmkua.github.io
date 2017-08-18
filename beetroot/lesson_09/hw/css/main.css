@@ -122,6 +122,10 @@
     color: #fdca00;
 }
 
+.card__label {
+    position: relative;
+}
+
 .card__size,
 .card__quantity {
     border: 1px solid #fff;
@@ -129,11 +133,31 @@
     color: #e1e1e1;
     padding: 10px 14px;
     opacity: .26;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    padding-right: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+.card__icon {
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    color: #e1e1e1;
+    opacity: .26;
 }
 
 .card__size:active,
 .card__quantity:active {
     background: #4c525a;
+}
+
+.card__size:active option:first-child,
+.card__quantity:active option:first-child {
+    display: none;
 }
 
 .card__button {
