@@ -92,7 +92,7 @@
         transition: .5s;
     }
     
-    .responsive-btn:active + .nav__list {
+    .responsive-btn:hover + .nav__list {
         right: -15px; 
     }
     
