@@ -92,7 +92,7 @@
         transition: .5s;
     }
     
-    .responsive-btn:hover + .nav__list {
+    input[type="checkbox"]:checked ~ .nav__list {
         right: -15px; 
     }
     
