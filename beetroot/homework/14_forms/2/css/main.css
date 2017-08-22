@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');*/
 
 * {
     box-sizing: border-box
@@ -11,10 +11,12 @@ body {
     background: 
         url(../img/unsplash.png) right no-repeat,
         linear-gradient(to bottom right, #545a5b, #171a1e) no-repeat;
+    background-size: contain;
+    height: 100vh;
 }
 
 .form {
-    width: 336px;
+    max-width: 336px;
     margin: 35px auto;
 }
 
@@ -62,17 +64,20 @@ body {
     color: #9eabad;
     font-size: .813rem;
     font-weight: 400;
+    margin: 5px 0;
 }
 
 .form__input-card-number,
 .form__select-month,
 .form__select-year,
 .form__input-cvv {
-    padding: 17px 9px;
+    padding: 12px 9px;
     border: 2px solid #bac8cb;
     background: none;
     color: #727f82;
     font-size: .813rem;
+    margin-bottom: 28px;
+    font-weight: 400;
 }
 
 .form__input-card-number {
@@ -86,4 +91,42 @@ body {
 
 .form__select-year {
     width: 30%;
+}
+
+.form__input-cvv {
+    width: 30%;
+}
+
+.form__text-cvv {
+    color: #9eabad;
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+.form__link {
+    color: #9eabad;
+    font-size: .75rem;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 1px solid #9eabad;
+}
+
+.form__hr {
+    border-bottom: 1px solid #edf0f1;
+}
+
+.form__submit {
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    border: none;
+    background: #25b86a;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.form__cancel-order {
+    text-align: center;
+    margin-top: 22px;
 }

@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>forms</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="libs/normalize/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <form action="get" class="form">
@@ -67,13 +69,17 @@
             
             <input type="text" class="form__input-cvv">
             
-            <p class="form__text-cvv">3 or 4 digits - <a href="#" class="form__link">view example</a></p>
+            <span class="form__text-cvv">3 or 4 digits - <a href="#" class="form__link">view example</a></span>
             
             <div class="form__hr"></div>
             
-            <input type="submit" class="form__submit" value="pay">
+            <input type="submit" class="form__submit" value="Pay">
             
-            <a href="#" class="form__link form__link--center">Cancel order</a>
+            <div class="form__cancel-order">
+                
+                <a href="#" class="form__link">Cancel order</a>
+                
+            </div>
             
         </div> <!--        ./form body-->
         
