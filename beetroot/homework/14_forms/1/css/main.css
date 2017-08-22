@@ -10,7 +10,7 @@ body {
 }
 
 .form {
-    width: 460px;
+    max-width: 460px;
     background: #fff;
     margin: 50px auto;
     padding: 30px;
