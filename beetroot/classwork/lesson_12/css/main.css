@@ -1,0 +1,132 @@
+/*---includes libs files---*/
+@import url(libs.css);
+
+
+
+
+
+html {
+    font-size: 16px;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+}
+
+
+
+/*---header---*/
+
+
+
+
+
+/*----top header----*/
+.header__top {
+    background: #fff;
+    padding: 9px 0;
+    border: 1px solid #97455f;
+}
+
+
+
+
+
+/*---button---*/
+.hide-btn {
+    background: #97455f;
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    right: 0;
+    bottom: -35px;
+    cursor: pointer;
+    border-radius: 0 0 5px 5px;
+}
+
+
+
+
+
+/*---social---*/
+.social__item {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.social__item:first-child {
+    margin-left: 0;
+}
+
+.social__link {
+    width: 32px;
+    height: 32px;
+    background: #d2d2d2;
+    border-radius: 50%;
+    display: block;
+    transition: all .2s;
+}
+
+.social__link--hover:hover {
+    background: #ee802f;
+    color: #fff;
+}
+
+
+
+
+
+/*---navigation---*/
+/*
+.nav__list {
+    width: 100%;
+    vertical-align: middle;
+}
+*/
+
+.nav__item {
+    display: inline-block;
+    margin-right: 13px;
+}
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+.nav__link {
+    color: #97455f;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: .875rem;
+    position: relative;
+}
+
+.nav__item:not(:last-child) .nav__link:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #97455f;
+    position: absolute;
+    right: -6px;
+    top: 0;
+}
+
+
+
+
+
+/*---header bottom---*/
+.header__bottom {
+    background: #ededed;
+    padding: 63px 0 180px 0;
+}
+
+.maincontent {
+    margin-top: -143px;
+}
