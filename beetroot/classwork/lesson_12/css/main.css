@@ -114,6 +114,15 @@ ul, ol {
     text-align: right;
 }
 
+.main-nav__check {
+  display: none;
+}
+
+.main-nav__menu-icon {
+  text-align: right;
+  display: none;
+}
+
 .nav__item {
     display: inline-block;
     margin-left: 13px;
