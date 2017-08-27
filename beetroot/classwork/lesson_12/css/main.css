@@ -7,10 +7,6 @@ html {
     font-size: 16px;
 }
 
-body {
-  overflow: hidden;
-}
-
 .container {
     position: relative;
 }
@@ -113,6 +109,10 @@ ul, ol {
 /**
             1.1.2 NAVIGATION
 **/
+
+.maincontent {
+  overflow: hidden;
+}
 
 .nav {
     text-align: right;
