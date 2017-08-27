@@ -1,0 +1,52 @@
+@media screen and (max-width: 768px) {
+  .row--middle {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .social,
+  .nav {
+    text-align: right;
+  }
+
+  .header__bottom-left {
+    justify-content: center;
+  }
+
+  .header__search-field {
+    width: 100%;
+  }
+
+  .header__bottom {
+        padding: 63px 0 150px 0;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .sliders__caption {
+    right: 0;
+  }
+
+  .contact-us-today {
+    flex-wrap: wrap;
+  }
+
+  .latest__title,
+  .company-details__title,
+  .company-details__info,
+  .contact-us__title {
+    text-align: center;
+  }
+
+  .contact-us__submit {
+    width: 100%;
+  }
+
+  .copyright,
+  .author {
+    text-align: center;
+  }
+}
