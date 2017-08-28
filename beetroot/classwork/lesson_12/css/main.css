@@ -37,7 +37,7 @@ ul, ol {
 
 .header__top {
     background: #fff;
-    padding: 9px 0;
+    padding: 0;
     border-bottom: 1px solid #97455f;
     position: relative;
 }
@@ -48,7 +48,7 @@ ul, ol {
     height: 25px;
     position: absolute;
     right: 15px;
-    bottom: -35px;
+    bottom: -25px;
     cursor: pointer;
     border-radius: 0 0 5px 5px;
 }
@@ -56,6 +56,10 @@ ul, ol {
 .row--middle {
     display: flex;
     align-items: center;
+}
+
+.row--hidden {
+  display: none;
 }
 
 

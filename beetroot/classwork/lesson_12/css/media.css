@@ -43,8 +43,14 @@
     color: #ccc;
     width: 100%;
   }
+  .sliders {
+    padding: 20px 10px;
+  }
   .sliders__caption {
     right: 0;
+  }
+  .block-article--padding {
+      padding: 0 5px;
   }
   .block-article-second {
     flex-direction: column;
@@ -58,6 +64,9 @@
   .block-article-second__title {
     text-align: center;
     margin-top: 10px;
+  }
+  .contact-us-today--padding {
+      padding: 0 20px;
   }
   .contact-us-today {
     flex-wrap: wrap;

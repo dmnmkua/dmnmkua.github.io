@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media.css">
+  <script src="js/main.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -16,9 +17,9 @@
 
     <!--header-->
     <header class="header">
-      <div class="header__top">
+      <div class="header__top" id="header-top">
         <div class="container">
-          <div class="row row--middle">
+          <div class="row row--middle row--hidden" id="hide-block">
             <div class="col-lg-8 col-md-6 col-sm-6 col-xs-12">
               <!--social-->
               <div class="social">
@@ -58,7 +59,7 @@
 
             </div>
           </div>
-          <div class="hide-btn"></div>
+          <div class="hide-btn" id="hide-btn"></div>
         </div>
         <!--container-->
       </div>
@@ -218,7 +219,7 @@
                   <h3 class="maincontent__title">you title here</h3>
                 </div>
                 <div class="block-article-second block-article-second--before">
-                  
+
                   <div class="block-article-second__block-text">
                     <h4 class="block-article-second__title">Tommy Tanker - CEO</h4>
                     <a href="" class="block-article-second__link">View This Project »</a>
