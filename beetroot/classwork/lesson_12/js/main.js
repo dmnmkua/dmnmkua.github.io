@@ -12,7 +12,7 @@ window.onload = function() {
       btn.style.bottom = "-25px";
     }
     else {
-      hideBlock.style.display = "block";
+      hideBlock.style.display = "flex";
       headerTop.style.padding = "9px 0";
       btn.style.bottom = "-35px";
     }
