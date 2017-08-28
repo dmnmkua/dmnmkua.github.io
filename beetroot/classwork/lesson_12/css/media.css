@@ -70,6 +70,7 @@
   }
   .contact-us-today {
     flex-wrap: wrap;
+    padding: 24px 5px;
   }
   .latest__title, .company-details__title, .company-details__info, .contact-us__title {
     text-align: center;
