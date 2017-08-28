@@ -1,11 +1,11 @@
 @media screen and (max-width: 768px) {
 
   .wrapper {
-    transform: translateY(-70px);
+    margin-top: -70px;
   }
 
   .wrapper--open {
-    transform: translateY(0px);
+    margin-top: 0px;
   }
 
   .row--middle {

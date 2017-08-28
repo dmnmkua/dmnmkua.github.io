@@ -18,12 +18,12 @@ ul, ol {
 }
 
 .wrapper {
-  transform: translateY(-50px);
+  margin-top: -50px;
   transition: .3s;
 }
 
 .wrapper--open {
-  transform: translateY(0px);
+  margin-top: 0px;
 }
 
 
