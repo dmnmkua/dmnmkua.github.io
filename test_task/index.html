@@ -9,7 +9,14 @@
       rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
+  <!-- Magnific Popup core JS file -->
+  <script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- main.js -->
   <script src="js/main.js" charset="utf-8"></script>
+  <!-- gallery.js -->
+  <script src="js/gallery.js" charset="utf-8"></script>
 </head>
 <body>
 
@@ -120,18 +127,160 @@
         <!-- gallery -->
         <div class="gallery">
 
-          <div class="gallery__item"></div>
-          <div class="gallery__item"></div>
-          <div class="gallery__item"></div>
-          <div class="gallery__item"></div>
-          <div class="gallery__item"></div>
-          <div class="gallery__item"></div>
-          <div class="gallery__item"></div>
-          <div class="gallery__item"></div>
-          <div class="gallery__item"></div>
-          <div class="gallery__item"></div>
-          <div class="gallery__item"></div>
-          <div class="gallery__item"></div>
+          <!-- <div class="gallery__item">
+            <a href="img/img-1.jpg" class="gallery__link">
+              <img src="img/img-min1.jpg" alt="img" class="mp-img">
+            </a>
+          </div> -->
+
+          <ul class="gallery__list">
+
+            <li class="gallery__item">
+              <a href="img/img-1.jpg" class="gallery__link">
+                <img src="img/img-min1.jpg" alt="gallery image" class="gallery__img">
+              </a>
+              <div class="gallery__voile">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            </li>
+
+            <li class="gallery__item">
+              <a href="img/img-2.jpg" class="gallery__link">
+                <img src="img/img-min2.jpg" alt="gallery image" class="gallery__img">
+              </a>
+              <div class="gallery__voile">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            </li>
+
+            <li class="gallery__item">
+              <a href="img/img-3.jpg" class="gallery__link">
+                <img src="img/img-min3.jpg" alt="gallery image" class="gallery__img">
+              </a>
+              <div class="gallery__voile">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            </li>
+            
+            <li class="gallery__item">
+              <a href="img/img-1.jpg" class="gallery__link">
+                <img src="img/img-min1.jpg" alt="gallery image" class="gallery__img">
+              </a>
+              <div class="gallery__voile">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            </li>
+
+            <li class="gallery__item">
+              <a href="img/img-2.jpg" class="gallery__link">
+                <img src="img/img-min2.jpg" alt="gallery image" class="gallery__img">
+              </a>
+              <div class="gallery__voile">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            </li>
+
+            <li class="gallery__item">
+              <a href="img/img-3.jpg" class="gallery__link">
+                <img src="img/img-min3.jpg" alt="gallery image" class="gallery__img">
+              </a>
+              <div class="gallery__voile">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            </li>
+
+            <li class="gallery__item">
+              <a href="img/img-1.jpg" class="gallery__link">
+                <img src="img/img-min1.jpg" alt="gallery image" class="gallery__img">
+              </a>
+              <div class="gallery__voile">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            </li>
+
+            <li class="gallery__item">
+              <a href="img/img-2.jpg" class="gallery__link">
+                <img src="img/img-min2.jpg" alt="gallery image" class="gallery__img">
+              </a>
+              <div class="gallery__voile">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            </li>
+
+            <li class="gallery__item">
+              <a href="img/img-3.jpg" class="gallery__link">
+                <img src="img/img-min3.jpg" alt="gallery image" class="gallery__img">
+              </a>
+              <div class="gallery__voile">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            </li>
+
+            <li class="gallery__item">
+              <a href="img/img-1.jpg" class="gallery__link">
+                <img src="img/img-min1.jpg" alt="gallery image" class="gallery__img">
+              </a>
+              <div class="gallery__voile">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            </li>
+
+            <li class="gallery__item">
+              <a href="img/img-2.jpg" class="gallery__link">
+                <img src="img/img-min2.jpg" alt="gallery image" class="gallery__img">
+              </a>
+              <div class="gallery__voile">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            </li>
+
+            <li class="gallery__item">
+              <a href="img/img-3.jpg" class="gallery__link">
+                <img src="img/img-min3.jpg" alt="gallery image" class="gallery__img">
+              </a>
+              <div class="gallery__voile">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            </li>
+
+          </ul>
+
 
         </div> <!-- ./gallery -->
 
