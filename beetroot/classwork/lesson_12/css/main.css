@@ -257,9 +257,9 @@ ul, ol {
   margin: 0;
 }
 
-.main-nav__item:last-child {
+/*.main-nav__item:last-child {
   flex-grow: 2;
-}
+}*/
 
 .main-nav__link {
   display: block;
