@@ -173,6 +173,7 @@ html {
   border: none;
   z-index: 10;
   outline: none;
+  overflow: hidden;
 }
 
 .hidden-btn__icon {
@@ -451,6 +452,9 @@ html {
 
 
 
+
+
+
 /*
       3.2.1. SOCIAL
 */
@@ -496,6 +500,7 @@ html {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  margin-bottom: 0;
 }
 
 .footer__nav-link {
