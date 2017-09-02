@@ -1,0 +1,14 @@
+@font-face {
+	font-family: "LatoRegular";
+	url("Lato-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "LatoLight";
+	url("Lato-Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
