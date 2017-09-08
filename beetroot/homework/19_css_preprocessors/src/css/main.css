@@ -72,7 +72,7 @@
     position: absolute;
     top: 43%; }
   .profile:before {
-    content: "↓";
+    content: "🢐";
     left: 10px; }
   .profile:after {
     content: "🢒";
