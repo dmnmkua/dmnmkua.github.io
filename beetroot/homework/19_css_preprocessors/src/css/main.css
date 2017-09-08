@@ -72,10 +72,10 @@
     position: absolute;
     top: 43%; }
   .profile:before {
-    content: "🢐";
+    content: "\1F890";
     left: 10px; }
   .profile:after {
-    content: "🢒";
+    content: "\1F892";
     right: 10px; }
 
 .profile-left,
