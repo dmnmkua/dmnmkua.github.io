@@ -31,6 +31,7 @@ body {
   background: #0288D1;
   color: #fff;
   transition: .3s;
+  will-change: auto;
 }
 
 .menu__title:hover {
@@ -47,7 +48,8 @@ body {
   padding: 0;
   height: 0;
   font-size: 0;
-  transition: .1s;
+  transition: all .2s cubic-bezier(0.25,0.1,0.25,1);
+  will-change: auto;
 }
 
 .menu__desc--open {
