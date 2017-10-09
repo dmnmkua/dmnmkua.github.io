@@ -5,11 +5,18 @@ window.onload = () => {
     let crTableRow = document.createElement('tr');
     let crTableData = document.createElement('td');
 
+    if(document.getElementById('table')) {
+      let tab = document.getElementById('table');
+      tab.parentNode.removeChild(tab);
+    }
+
     crTable.setAttribute('id', 'table');
     crTable.classList.add('table');
     crTableRow.classList.add('table__row');
     crTableData.classList.add('table__data');
     let table = document.body.appendChild(crTable);
+
+
 
     for(let i = 0; i < +num; i++) {
       table.appendChild(crTableRow.cloneNode(true));
