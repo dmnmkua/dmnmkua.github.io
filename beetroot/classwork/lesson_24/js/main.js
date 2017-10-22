@@ -104,6 +104,8 @@ function init_() {
     this.trashList = document.querySelector('.trash__list');
     this.btnDropdown = document.querySelector('.todo__dropdown-btn');
     this.btnRemove = document.querySelector('.trash__btn');
+    this.cloneTrash;
+    this.cloneTask;
 
     // создание уведомления при пустом списке
     createMessage_ = () => {
@@ -175,16 +177,16 @@ function init_() {
 
       // удаление выполненого задания
       this.taskList.addEventListener('click', e => {
-        setTimeout( () => {
           if(e.target.checked) {
             this.cloneTask = e.target.parentNode.parentNode.cloneNode(true);
             this.trashList.appendChild(this.cloneTask);
-            e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode);
-            if(this.taskList.children.length === 0) {
-              createMessage_();
-            }
+            setTimeout( () => {
+              e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode);
+              if(this.taskList.children.length === 0) {
+                createMessage_();
+              }
+            }, 500);
           }
-        }, 1000);
       })
 
       this.btnDropdown.addEventListener('click', () => {
@@ -196,14 +198,12 @@ function init_() {
       })
 
       this.trashList.addEventListener('click', e => {
-        setTimeout( () => {
-          if(!e.target.checked) {
-            this.cloneTrash = e.target.parentNode.parentNode.cloneNode(true);
-            this.taskList.appendChild(this.cloneTrash);
-            e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode);
-            deleteMessage_();
-          }
-        }, 1000);
+        if(e.target.tagName === 'INPUT' && !e.target.checked) {
+          this.cloneTrash = e.target.parentNode.parentNode.cloneNode(true);
+          this.taskList.appendChild(this.cloneTrash);
+          e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode);
+          deleteMessage_();
+        }
       })
 
       this.btnRemove.addEventListener('click', () => {
