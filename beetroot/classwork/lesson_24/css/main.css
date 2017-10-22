@@ -12,6 +12,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14px;
     width: 100%;
+    overflow: hidden;
 }
 
 .todo__btn {
@@ -39,6 +40,10 @@
     line-height: 26px;
 }
 
+.todo__dropdown {
+  position: relative;
+}
+
 .todo__dropdown-btn {
     border-radius: 50%;
     transition: background .2s ease-in-out;
@@ -47,6 +52,29 @@
 
 .todo__dropdown-btn:hover {
     background: rgba(250,250,250, .2);
+}
+
+.todo__dropdown-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: -1000px;
+  top: 0;
+  cursor: pointer;
+  transition: .3s right;
+  will-change: right;
+}
+
+.todo__dropdown-list--show {
+  right: 0;
+}
+
+.todo__dropdown-item {
+  margin: 0;
+  padding: 10px 40px;
+  background: #081472;
+  cursor: pointer;
 }
 
 .todo__body-list {

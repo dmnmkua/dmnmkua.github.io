@@ -25,6 +25,9 @@ function init_() {
       this.crIconMoreText = document.createTextNode('more_vert');
       this.crDropdownList = document.createElement('ul');
       this.crDropdownList.classList.add('todo__dropdown-list');
+      this.crDropdownItem = document.createElement('li');
+      this.crDropdownItem.classList.add('todo__dropdown-item');
+      this.crDropdownItemText = document.createTextNode('Trash');
       this.crTodoBody = document.createElement('div');
       this.crTodoBody.classList.add('todo__body');
       this.crTodoBodyList = document.createElement('ul');
@@ -64,6 +67,8 @@ function init_() {
 
       this.crIconMore.appendChild(this.crIconMoreText);
       this.crBtnDropdown.appendChild(this.crIconMore);
+      this.crDropdownItem.appendChild(this.crDropdownItemText);
+      this.crDropdownList.appendChild(this.crDropdownItem);
       this.crTodoDropdown.appendChild(this.crBtnDropdown);
       this.crTodoDropdown.appendChild(this.crDropdownList);
       this.crTodoTitle.appendChild(this.crTodoTitleText);
@@ -178,10 +183,10 @@ function init_() {
       // удаление выполненого задания
       this.taskList.addEventListener('click', e => {
           if(e.target.checked) {
-            this.cloneTask = e.target.parentNode.parentNode.cloneNode(true);
+            this.cloneTask = e.target.closest('li').cloneNode(true);
             this.trashList.appendChild(this.cloneTask);
             setTimeout( () => {
-              e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode);
+              e.target.closest('ul').removeChild(e.target.closest('li'));
               if(this.taskList.children.length === 0) {
                 createMessage_();
               }
@@ -189,9 +194,27 @@ function init_() {
           }
       })
 
-      // вызов корзины
+      // вызов dropdown меню
       this.btnDropdown.addEventListener('click', () => {
-        this.trash.classList.add('trash--show');
+        setTimeout( () => {
+          this.crDropdownList.classList.add('todo__dropdown-list--show');
+        }, 100);
+
+      })
+
+      // закрытие dropdown меню
+      document.body.addEventListener('click', () => {
+        if(this.crDropdownList.classList.contains('todo__dropdown-list--show')) {
+          this.crDropdownList.classList.remove('todo__dropdown-list--show')
+        }
+      })
+
+      // открытие корзины
+      this.crDropdownList.addEventListener('click', e => {
+        if(e.target.tagName === 'LI' && e.target.classList.contains('todo__dropdown-item')) {
+          this.trash.classList.add('trash--show');
+          this.crDropdownList.classList.remove('todo__dropdown-list--show');
+        }
       })
 
       // закрытие корзины
@@ -202,9 +225,9 @@ function init_() {
       // возврат заданий с корзины
       this.trashList.addEventListener('click', e => {
         if(e.target.tagName === 'INPUT' && !e.target.checked) {
-          this.cloneTrash = e.target.parentNode.parentNode.cloneNode(true);
+          this.cloneTrash = e.target.closest('li').cloneNode(true);
           this.taskList.appendChild(this.cloneTrash);
-          e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode);
+          e.target.closest('ul').removeChild(e.target.closest('li'));
           deleteMessage_();
         }
       })
@@ -213,7 +236,6 @@ function init_() {
       this.btnRemove.addEventListener('click', () => {
         this.trashList.innerHTML = '';
       })
-
     }
 
     init_ = () => {
