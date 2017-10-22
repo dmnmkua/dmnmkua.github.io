@@ -189,14 +189,17 @@ function init_() {
           }
       })
 
+      // вызов корзины
       this.btnDropdown.addEventListener('click', () => {
         this.trash.classList.add('trash--show');
       })
 
+      // закрытие корзины
       this.overlay.addEventListener('click', () => {
         this.trash.classList.remove('trash--show');
       })
 
+      // возврат заданий с корзины
       this.trashList.addEventListener('click', e => {
         if(e.target.tagName === 'INPUT' && !e.target.checked) {
           this.cloneTrash = e.target.parentNode.parentNode.cloneNode(true);
@@ -206,6 +209,7 @@ function init_() {
         }
       })
 
+      // очистка корзины
       this.btnRemove.addEventListener('click', () => {
         this.trashList.innerHTML = '';
       })
