@@ -151,20 +151,6 @@ function init_() {
       this.crTodoLabel.appendChild(this.crDesc);
       this.crTodoItem.appendChild(this.crTodoLabel);
       this.taskList.appendChild(this.crTodoItem);
-
-      this.crTodoItem.addEventListener('click', e => {
-        if(e.target.checked) {
-          e.target.setAttribute('disabled', 'disabled');
-          this.cloneTask = e.target.closest('li').cloneNode(true);
-          this.trashList.appendChild(this.cloneTask);
-          setTimeout( () => {
-            e.target.closest('ul').removeChild(e.target.closest('li'));
-            if(this.taskList.children.length === 0) {
-              createMessage_();
-            }
-          }, 500);
-        }
-      })
     }
 
     // вставка сообщение при пустом списке
@@ -195,18 +181,19 @@ function init_() {
       })
 
       // удаление выполненого задания
-      // this.taskList.addEventListener('click', e => {
-      //     if(e.target.checked) {
-      //       this.cloneTask = e.target.closest('li').cloneNode(true);
-      //       this.trashList.appendChild(this.cloneTask);
-      //       setTimeout( () => {
-      //         e.target.closest('ul').removeChild(e.target.closest('li'));
-      //         if(this.taskList.children.length === 0) {
-      //           createMessage_();
-      //         }
-      //       }, 500);
-      //     }
-      // })
+      this.taskList.addEventListener('click', e => {
+          if(e.target.checked) {
+            this.cloneTask = e.target.closest('li').cloneNode(true);
+            e.target.setAttribute('disabled', 'disabled');
+            this.trashList.appendChild(this.cloneTask);
+            setTimeout( () => {
+              e.target.closest('ul').removeChild(e.target.closest('li'));
+              if(this.taskList.children.length === 0) {
+                createMessage_();
+              }
+            }, 500);
+          }
+      })
 
       // вызов dropdown меню
       this.btnDropdown.addEventListener('click', () => {
