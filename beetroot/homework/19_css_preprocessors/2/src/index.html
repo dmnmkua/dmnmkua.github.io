@@ -5,7 +5,7 @@
   <title>Document</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
-  <script src="./js/main.js" charset="utf-8"></script>
+
 </head>
 <body>
   <div class="wrapper">
@@ -375,7 +375,7 @@
     <!-- section-seven -->
     <section class="section-seven">
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9157.95482501321!2d31.98172838571866!3d46.96805046492779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1505309993811" frameborder="0" style="border:0" allowfullscreen class="section-seven__map"></iframe>
+      <div class="section-seven__map" id="map"></div>
 
       <div class="section-seven__veil"></div>
 
@@ -437,5 +437,7 @@
     </section> <!-- ./section-eight -->
 
   </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT2fpxOrjQ6n_pStYSP4R6IHRgCqW3rPA&callback=initMap" async defer></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
